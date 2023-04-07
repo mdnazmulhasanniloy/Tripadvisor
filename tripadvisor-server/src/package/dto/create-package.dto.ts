@@ -1,8 +1,11 @@
+import { Place, Restaurant, Hotel } from "../schema/Package";
+
 export class CreatePackageDto {
     name: string;
+    img: string;
     duration: Date;
     numberOfPeople: number;
-    place: string;
-    hotel: string;
-    restaurant: string;
+    place: Place;
+    hotel: Hotel;
+    restaurant: Restaurant;
 }
